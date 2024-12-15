@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="img/logonwrapper/logo-crop.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/aeea2ec40a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Code Land - Micro:bit</title>
+</head>
+<body class="bg-gray-100 scroll-smooth box-border m-0 p-0 overflow-x-hidden">
+
+    <div class="popup-popust-overlay w-full h-full bg-[rgba(0,0,0,0.7)] fixed top-0 left-0 hidden justify-center items-center z-10" id="popup-container">
+        <div class="popup-popust bg-white w-96 px-6 py-12 flex flex-col justify-center items-center rounded-lg">
+            <i class="fa-solid fa-x bg-sky-500 text-white rounded-full w-8 h-8 flex justify-center items-center cursor-pointer hover:bg-white border-sky-500 hover:border hover:border-sky-500 hover:text-sky-500 transition-all duration-300 mb-6" id="popup-delete"></i>
+            <h2 class="my-2 text-xl font-bold">Pronađite popust za sebe!</h2>
+            <p class="text-justify">Škola programiranja za djecu Code Land pripremila je nekoliko popusta kako bismo olakšali vaš kućni budžet.</p>
+            <ul class="px-4 my-2">
+                <p>1. Dvoje djece iz iste porodice – 10%</p>
+                <p>2. Nosioci “<b>Ponosne kartice</b>” (porodice 3+ djece) – 20%</p>
+                <p>3. Prva generacija upisanih – 10%</p>
+                <p>4. Rane prijave – 10%</p>
+                <p>5. Donosiocu flajera – 10%</p>
+                <p>6. Dovedite novog učenika – 10 %</p>
+            </ul>
+        </div>
+    </div>
+
+    <div class="hamburger bg-white fixed top-0 w-0 left-[-384px] h-screen flex justify-center items-center transition-all duration-500 z-20" id="hamburger">
+        <div class="inner flex justify-center items-center flex-col">
+            <i class="fa-solid fa-x text-3xl cursor-pointer" id="menu-delete"></i>
+            <ul class="flex justify-center items-center flex-col my-12">
+                <a href="index.html" class="hover:underline text-2xl font-medium my-2"><li>CodeLand</li></a>
+                <a href="kursevi.html" class="hover:underline text-2xl font-medium my-2"><li>Kursevi</li></a>
+                <a href="index.html#anchor-link-team" class="hover:underline text-2xl font-medium my-2"><li>Tim</li></a>
+                <a href="index.html#anchor-link-blog" class="hover:underline text-2xl font-medium my-2"><li>Blog</li></a>
+                <a href="" class="hover:underline text-2xl font-medium my-2"><li>Kontakt</li></a>
+                <a href="" class="hover:underline text-2xl font-medium my-2"><li>Partneri</li></a>
+                <a href="" class="hover:underline text-2xl font-medium my-2"><li>Prijava</li></a>
+            </ul>
+            <img src="img/logonwrapper/logo-crop-black.png" class="cursor-pointer w-20">
+        </div>
+    </div>
+
+    <div class="nav w-full h-20 flex justify-between items-center pl-8 pr-8 fixed top-0 z-10" id="nav-id">
+        <i class="fa-solid fa-bars text-white text-2xl hover:cursor-pointer p-2" id="menu-activator"></i>
+        <img src="img/logonwrapper/logo.png" class="scale-75 hover:cursor-pointer">
+    </div>
+
+    <div class="text-center flex h-screen flex-col items-center justify-center bg-slate-900">
+        <img src="img/courses/microbit-nobg.png" class="cursor-pointer w-48 translate-y-10">
+        <h1 class="font-bold text-white text-4xl mb-4 mt-4">Micro:bit</h1>
+        <h2 class="text-gray-300 text-lg font-medium mb-4 ">Stvaraj pametne uređaje sa Microbit-om!</h2>
+        <button class="rounded-lg px-6 py-2 cursor-pointer text-white font-semibold bg-sky-500 transition-all duration-300 hover:bg-sky-300">Registruj se</button>
+    </div>
+
+    <div class="course-details flex flex-col justify-center items-center py-16 my-4">
+
+        <div class="upper gap-8 flex flex-col justify-center items-center">
+            <div class="top flex flex-col justify-center items-center w-[800px] bg-white shadow-lg p-12 rounded-lg">
+                <img src="img/courses/microbit-nobg.png" class="w-40">
+                <h1 class="font-semibold my-2 text-lg text-center">Dobrodošli na Micro:bit!</h1>
+                <p class="text-justify text-slate-800">Dobrodošli na uzbudljiv kurs Micro:bit programiranja! Cilj ovog kursa je da vašu djecu upoznamo s micro:bit platformom i osnovama programiranja ovog malog, ali moćnog uređaja. Kroz interaktivne lekcije i projekte, djeca uče koristiti micro:bit za kreiranje različitih interaktivnih aplikacija. Mjerač otkucaja srca, mjerač napravljenih koraka? Ma, može! Da bismo napravili ove aplikacije, upoznajemo LED svjetla i senzore micro:bit-a. Oni su posebno interesantni, jer pomoću njih, pored pravljenja igrica i mjerača, možemo izvoditi i razne interaktivne eksperimente. Na ovaj način, micro:bit postaje alat kojim djeca izražavaju svoje ideje i kreiraju jedinstvene projekte. Na kraju kursa, djeca će prezentovati svoje završne projekte i podijeliti svoje kreativne ideje sa ostalim polaznicima i roditeljima te tako steći dodatno samopouzdanje. Pridružite nam se na ovom uzbudljivom putovanju kroz svijet Micro:bit programiranja i podržite razvoj logičkog razmišljanja i kreativnosti vaše djece. Na vrijeme se prijavite za kurs koji će vašoj djeci donijeti vrijedne vještine i zabavu!</p>
+            </div>
+            <div class="bottom w-[800px] flex justify-between items-center flex-wrap">
+                <div class="left w-96 bg-white shadow-lg rounded-lg h-84 px-6 py-8">
+                    <h1 class="text-lg font-semibold text-center mb-2">Šta ćemo naučiti?</h1>
+                    <ul class="[&>li>i]:text-lime-500 [&>li>i]:mr-2 [&>li]:text-slate-800 [&>li]:text-md [&>li]:my-1">
+                        <li><i class="fa-solid fa-check mr-2"></i>Micro:Bit uređaj</li>
+                        <li><i class="fa-solid fa-check"></i>Online App okruženje</li>
+                        <li><i class="fa-solid fa-check"></i>Upravljanje osnovnim blokovima</li>
+                        <li><i class="fa-solid fa-check"></i>Dizajn uređaja</li>
+                        <li><i class="fa-solid fa-check"></i>Rad sa senzorima</li>
+                        <li><i class="fa-solid fa-check"></i>Rad sa bežičnom komunikacijom</li>
+                        <li><i class="fa-solid fa-check"></i>Rad sa zvukom i muzikom</li>
+                        <li><i class="fa-solid fa-check"></i>Izrada završnog projekta i prezentovanje</li>
+                    </ul>
+                </div>
+                <div class="right w-96 bg-white shadow-lg rounded-lg h-84 px-6 py-8">
+                    <h1 class="text-lg font-semibold text-center mb-2">Osnovni podaci</h1>
+                    <ul class="[&>li>i]:text-lime-500 mr-2 [&>li>i]:mr-2 [&>li]:text-slate-800 [&>li]:text-md [&>li]:my-1">
+                        <li><i class="fa-solid fa-check"></i><strong>Uzrast</strong>: 9 - 14 godina</li>
+                        <li><i class="fa-solid fa-check"></i><strong>Broj modula</strong>:  1</li>
+                        <li><i class="fa-solid fa-check"></i><strong>Trajanje</strong>: 3 mjeseca, 1 sedmično</li>
+                        <li><i class="fa-solid fa-check"></i><strong>Fond časova</strong>: 12 ( 24 )</li>
+                        <li><i class="fa-solid fa-check"></i><strong>Trajanje jednog časa</strong>: 2 X 45</li>
+                        <li><i class="fa-solid fa-check"></i><strong>Format</strong>: Učionica ( 8 polaznika )</li>
+                        <li><i class="fa-solid fa-check"></i><strong>Predavač</strong>: Mitja Tanjga</li>
+                        <li><i class="fa-solid fa-check"></i><strong>Cijena</strong>: 300KM ( sa PDV-om )</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="lower">
+            <div class="interest w-[650px] mt-12">
+                <h1 class="font-bold text-3xl">Zainteresovani ste? Prijavite dijete odmah!</h1>
+                <p class="text-slate-500 my-4 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe asperiores, repellat perspiciatis vero dolorem error veritatis culpa quisquam harum, facere blanditiis hic iure illum reprehenderit inventore! Adipisci dolore mollitia ratione.</p>
+                <div class="button-container">
+                    <button class="rounded-lg px-6 py-2 cursor-pointer text-white font-semibold bg-sky-500 transition-all duration-300 hover:bg-sky-300 mr-4 w-36">Prijavite se</button>
+                    <button class="rounded-lg px-6 py-2 cursor-pointer text-white font-semibold bg-sky-500 transition-all duration-300 hover:bg-sky-300 w-36" id="popup-activator">Popusti!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="w-full h-96 bg-slate-900 flex justify-center items-center">
+        <div class="footer-inside-container flex flex-col justify-center items-center">
+
+            <div class="top">
+                <img src="img/logonwrapper/logo.png">
+            </div>
+        
+            <div class="seprator-line w-full bg-white h-[1px] my-8"></div>
+
+            <div class="bottom w-full">
+                <ul class="flex flex-wrap items-center justify-center w-full">
+                    <a href=""><li class="bg-white border-white rounded-full w-14 h-14 flex justify-center items-center cursor-pointer transition-all duration-300 text-slate-900 hover:bg-slate-900 hover:text-white hover:border-2 border-2 hover:border-white mr-2"><i class="fa-brands fa-instagram text-3xl"></i></a>
+                    <a href=""><li class="bg-white border-white rounded-full w-14 h-14 flex justify-center items-center cursor-pointer transition-all duration-300 text-slate-900 hover:bg-slate-900 hover:text-white hover:border-2 border-2 hover:border hover:border-white mx-2"><i class="fa-brands fa-facebook-f text-2xl"></i></a>
+                    <a href=""><li class="bg-white border-white rounded-full w-14 h-14 flex justify-center items-center cursor-pointer transition-all duration-300 text-slate-900 hover:bg-slate-900 hover:text-white hover:border-2 border-2 hover:border hover:border-white mx-2"><i class="fa-brands fa-x-twitter text-2xl"></i></a>
+                    <a href=""><li class="bg-white border-white rounded-full w-14 h-14 flex justify-center items-center cursor-pointer transition-all text-slate-900 duration-300 hover:bg-slate-900 hover:text-white hover:border-2 border-2 hover:border hover:border-white mx-2"><i class="fa-brands fa-linkedin-in text-2xl"></i></i></a>
+                    <a href=""><li class="bg-white border-white rounded-full w-14 h-14 flex justify-center text-slate-900 items-center cursor-pointer transition-all duration-300 hover:bg-slate-900 hover:text-white hover:border-2 border-2 hover:border hover:border-white mx-2"><i class="fa-brands fa-tiktok text-2xl"></i></a>
+                    <a href=""><li class="bg-white border-white rounded-full w-14 h-14 flex justify-center text-slate-900 items-center cursor-pointer transition-all duration-300 hover:bg-slate-900 hover:text-white hover:border-2 border-2 hover:border hover:border-white mx-2"><i class="fa-brands fa-youtube text-2xl"></i></a>
+                    <a href=""><li class="bg-white border-white rounded-full w-14 h-14 flex justify-center text-slate-900 items-center cursor-pointer transition-all duration-300 hover:bg-slate-900 hover:text-white hover:border-2 border-2 hover:border hover:border-white mx-2"><i class="fa-solid fa-envelope text-2xl"></i></a>
+                    <a href=""><li class="bg-white border-white rounded-full w-14 h-14 flex justify-center text-slate-900 items-center cursor-pointer transition-all duration-300 hover:bg-slate-900 hover:text-white hover:border-2 border-2 hover:border hover:border-white ml-2"><i class="fa-solid fa-phone text-2xl"></i></a>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <h4 class="text-white text-center pb-2 bg-slate-900">Website made by <a href="https://invenit.io/" target="_blank" class="underline">Invenit Solutions</a>&nbsp;<sup><i class="fa-regular fa-registered"></i></sup> | CodeLand, All rights reserved&nbsp;<sup><i class="fa-regular fa-copyright"></i></sup></h4>
+
+    <script src="script/popup.js"></script>
+    <script src="script/hamburger.js"></script>
+
+</body>
+</html>
