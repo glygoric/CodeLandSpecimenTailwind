@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="img/logonwrapper/logo-crop.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/aeea2ec40a.js" crossorigin="anonymous"></script>
+    <title>Code Land - Postani Partner</title>
+</head>
+<body class="bg-gray-100 box-border m-0 p-0 overflow-x-hidden">
+    <i class="fa-solid fa-circle-left text-4xl fixed top-[20px] left-[20px] cursor-pointer text-white" id="go-back"></i>
+
+    <div class="whole w-screen h-screen flex">
+        <div class="left w-2/4 h-screen bg-slate-900 flex flex-col justify-center items-center gap-4">
+            <img src="img/logonwrapper/logo.png">
+            <h1 class="text-white font-bold text-2xl">Postani partner!</h1>
+        </div>
+        <div class="right grid place-items-center h-screen w-2/4">
+            <form class="flex flex-col justify-center items-center w-[500px] px-4">
+
+                <h1 class="text-3xl font-semibold">Započnite saradnju!</h1>
+                <input type="text" required class="my-2 cursor-pointer bg-gray-100 border-b-[1px] border-b-[rgb(211,206,206)] outline-none h-8 w-full pl-4" placeholder="Ime firme">
+                <input type="text" required class="my-2 cursor-pointer bg-gray-100 border-b-[1px] border-b-[rgb(211,206,206)] outline-none h-8 w-full pl-4" placeholder="Adresa firme">
+                <input type="text" required class="my-2 cursor-pointer bg-gray-100 border-b-[1px] border-b-[rgb(211,206,206)] outline-none h-8 w-full pl-4" placeholder="Kontakt osoba ( Ime i Prezime )">
+                <input type="text" required class="my-2 cursor-pointer bg-gray-100 border-b-[1px] border-b-[rgb(211,206,206)] outline-none h-8 w-full pl-4" placeholder="Pozicija kontakt osobe">
+                <input type="email" required class="my-2 cursor-pointer bg-gray-100 border-b-[1px] border-b-[rgb(211,206,206)] outline-none h-8 w-full pl-4" placeholder="E-Mail">
+                <input type="text" required class="my-2 cursor-pointer bg-gray-100 border-b-[1px] border-b-[rgb(211,206,206)] outline-none h-8 w-full pl-4" placeholder="Telefon">
+                <input type="text" required class="my-2 cursor-pointer bg-gray-100 border-b-[1px] border-b-[rgb(211,206,206)] outline-none h-8 w-full pl-4 mb-4" placeholder="Web-Sajt firme ( Opcionalno )">
+
+                <div class="co-op w-[400px] mb-6 mt-2">
+                    <h1 class="font-semibold text-xl mb-2">Kategorija saradnje:</h1>
+                    <div class="selection-container flex flex-col gap-2">
+                        <div class="single flex justify-left items-center" >
+                            <input type="radio" name="co-op-c" required class="mr-2 w-5 h-5 cursor-pointer">
+                            <h1 class="font-medium text-lg">Investitor</h1>
+                        </div>
+                        <div class="single flex justify-left items-center" >
+                            <input type="radio" name="co-op-c" required class="mr-2 w-5 h-5 cursor-pointer">
+                            <h1 class="font-medium text-lg">Sponzor</h1>
+                        </div>
+                        <div class="single flex justify-left items-center" >
+                            <input type="radio" name="co-op-c" required class="mr-2 w-5 h-5 cursor-pointer" id="other-radio">
+                            <h1 class="font-medium text-lg">Drugo</h1>
+                        </div>
+                        <input type="text" id="other-input-text" placeholder="Navedite kategoriju saradnje" class="cursor-pointer bg-gray-100 border-b-[1px] border-b-[rgb(211,206,206)] outline-none h-8 w-full pl-4 mb-4 hidden" required>
+                    </div>
+                </div>
+
+                
+                <div class="pp flex justify-center items-center mb-4">
+                    <input type="checkbox" class="w-5 h-5 mr-2 cursor-pointer" required>
+                    <h4 class="text-lg text-base">Prihvatate <a href="" class="text-sky-500">Uslove Korišćenja</a> i <a href="" class="text-sky-500">Politku privatnosti</a>.</h4>
+                </div>
+                <button class="rounded-lg px-6 py-2 cursor-pointer text-white font-semibold bg-sky-500 transition-all duration-300 hover:bg-sky-300 w-32">Prijavi</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script/link.js"></script>
+    <script src="script/other.js"></script>
+
+</body>
+</html>
